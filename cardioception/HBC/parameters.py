@@ -173,15 +173,22 @@ def getParameters(
         os.makedirs(parameters["resultPath"])
 
     # Set note played at trial start
-    parameters["noteStart"] = sound.Sound(
-        pkg_resources.resource_filename("cardioception.HBC", "Sounds/start.wav")
-    )
+    if language == "english":
+        parameters["noteStart"] = sound.Sound(
+            pkg_resources.resource_filename("cardioception.HBC", "Sounds/start.wav")
+        )
+        parameters["noteStop"] = sound.Sound(
+            pkg_resources.resource_filename("cardioception.HBC", "Sounds/stop.wav")
+        )
+    elif language == "korean":
+        parameters["noteStart"] = sound.Sound(
+            pkg_resources.resource_filename("cardioception.HBC", "Sounds/start_kor.wav")
+        )
+        parameters["noteStop"] = sound.Sound(
+            pkg_resources.resource_filename("cardioception.HBC", "Sounds/stop_kor.wav")
+        )
 
-    parameters["noteStop"] = sound.Sound(
-        pkg_resources.resource_filename("cardioception.HBC", "Sounds/stop.wav")
-    )
-
-    # Open window
+        # Open window
     if parameters["setup"] == "test":
         fullscr = False
     parameters["win"] = visual.Window(screen=screenNb, fullscr=fullscr, units="height")
