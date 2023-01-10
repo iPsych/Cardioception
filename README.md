@@ -24,6 +24,11 @@ If you are using [systole](https://systole-docs.github.io/) to interact with you
 
 > Legrand et al., (2022). Systole: A python package for cardiac signal synchrony and analysis. Journal of Open Source Software, 7(69), 3832, https://doi.org/10.21105/joss.03832
 
+# Additional Language Implimentation
+Korean Language is now Supported in this fork. To use Korean version, install via below command.
+pip install https://github.com/iPsych/Cardioception
+
+
 ## Looking for help?
 
 If you have questions regarding the tasks, want to report a bug or discuss data analysis, please ask on our public [![Gitter](https://badges.gitter.im/Cardioception/community.svg)](https://gitter.im/Cardioception/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge).
