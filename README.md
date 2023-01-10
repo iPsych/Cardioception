@@ -26,7 +26,8 @@ If you are using [systole](https://systole-docs.github.io/) to interact with you
 
 # Additional Language Implimentation
 Korean Language is now Supported in this fork. To use Korean version, install via below command.
-pip install https://github.com/iPsych/Cardioception
+
+`pip install https://github.com/iPsych/Cardioception`
 
 
 ## Looking for help?
