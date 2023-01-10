@@ -10,7 +10,7 @@ import serial
 from systole import serialSim
 from systole.recording import Oximeter
 
-from cardioception.HRD.languages import danish, danish_children, english, french
+from cardioception.HRD.languages import danish, danish_children, english, french, korean
 
 
 def getParameters(
@@ -398,6 +398,10 @@ def getParameters(
         )
     elif language == "french":
         parameters["texts"] = french(
+            device=device, setup=setup, exteroception=exteroception
+        )
+    elif language == "korean":
+        parameters["texts"] = korean(
             device=device, setup=setup, exteroception=exteroception
         )
 
