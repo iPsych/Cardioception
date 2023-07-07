@@ -546,7 +546,7 @@ def korean(device: str, setup: str, exteroception: bool) -> Dict[str, Collection
 
     texts[
         "pulseTutorial2"
-    ] = "집게손가락에 센서가 있을 때 심장 박동이 느껴지면, 다른 손가락에 착용하십시오.""
+    ] = "집게손가락에 센서가 있을 때 심장 박동이 느껴지면, 다른 손가락에 착용하십시오."
 
     texts[
         "pulseTutorial3"
